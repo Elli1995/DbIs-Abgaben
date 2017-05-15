@@ -10,19 +10,103 @@
 \begin{center}
 \setcounter{section}{2}
 \section{\"Ubungsblatt DbIs}
-\end{center}
-\begin{center}
+
 \item{Elizabeth Ogbeide 353854, Grischa Raichande 354910, Malte Meng 354529}
 \end{center}
 \subsection{(Relationale Algebra)}
+
+\begin{enumerate}
+\item[a)] \begin{tabular}{ |c|c| } 
+ \hline
+ Name & Nummer \\ 
+ \hline\hline
+ William Boing & 10 \\ 
+ \hline
+ William Boing & 30 \\ 
+ \hline
+ William Boing & 40\\
+ \hline
+ James Bond & 50\\
+ \hline
+ James Bond & 20\\
+ \hline
+ Herman Gram & 60\\
+ \hline
+ Herman Gram & 70\\
+ \hline
+\end{tabular}
+
+\item[b)] \begin{tabular}{|c|c|c|c|}
+\hline
+Name & Nummer & Herzfrequenz & Distanz \\
+\hline\hline
+William Boing & 10 & 140 & 42 \\
+\hline
+William Boing & 40 & 149 & 21\\
+\hline
+\end{tabular}
+
+\item[c)] \begin{tabular}{|c|c|}
+\hline
+Nummer & Sieger\\
+\hline\hline
+10 & 10\\
+\hline
+50 & 10\\
+\hline
+60 & 70\\
+\hline
+30 & 60\\
+\hline
+40 & 40\\
+\hline 
+70 & 20\\
+\hline
+\end{tabular}
+
+\item[d)] \begin{tabular}{|c|c|}
+\hline
+Alter & Nummer\\
+\hline\hline
+55 & 10\\
+\hline
+44 & 50\\
+\hline
+55&30\\
+\hline
+\end{tabular}
+
+\item[e)] \begin{tabular}{|c|c|c|}
+\hline
+Name & Zeit & Distanz\\
+\hline\hline
+Herman Gram & 4:29:06 & 21\\
+\hline
+Herman Gram & 3:43:11 & 21\\
+\hline
+\end{tabular}
+
+\item[d)] \begin{tabular}{|c|c|}
+\hline
+Name & Herzfrequenz\\
+\hline\hline
+- & -\\
+\hline
+
+\end{tabular}
+\end{enumerate}
+
 
 \subsection{(Relationale Algebra)}
 \begin{enumerate}
 \item[a)] $\pi_{FName}(\rho_{Genre = Horror, Erscheinungsjahr > 2005}(Film))$
 \item[b)] $\pi_{FName, SName, Charakter}(Schauspieler \Join Spielt \Join Film)$
-\item[c)] $\pi_{FID}(\rho_{SName = Charlie Chaplin}(Schauspieler) \Join \rho_{Genre = Komoedie}(Film) \Join Spielt$
+\item[c)] $\pi_{\underline{FID}}(\rho_{SName = Charlie Chaplin}(Schauspieler) \Join \rho_{Genre = Komoedie}(Film) \Join Spielt$
 \item[d)] $\pi_{RName}(Regisseur \Join Dreht \Join \rho_{Charakter = Batman}(Spielt) \Join Film)$
+\item[e)] $\pi_{\underline{FID},FName,Genre, Erscheinungsjahr}( Film \Join Spielt \Join \rho_{SName \neq Til Schweiger}(Schauspieler))$
+\item[f)] k.A.
 \end{enumerate}
+
 \subsection{(Tupelkalk\"ul)}
 
 \end{document}
